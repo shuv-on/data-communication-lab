@@ -1,0 +1,10 @@
+f = 1;
+amp = 2;
+d = 4;
+fs = 100;
+t = 0:1/fs:d;
+x = 2*amp*(t*f-floor(t*f+0.5));
+plot(t, x);
+xlabel('Time (s)');
+ylabel('Amplitude');
+title('Manually Generated swatooth');
