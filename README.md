@@ -45,7 +45,7 @@ This repository contains MATLAB/Octave codes for various Signal Processing labor
 | **02** | **Polar NRZ** | **0:** +ve Voltage <br> **1:** -ve Voltage | `if b==1,  s=-1*ones(1,n);`<br>`else s = ones(1,n); end` |
 | **03** | **Unipolar RZ** | **1:** Half High, Half Zero <br> **0:** Always Zero | `if b==1, s=[ones(1,n/2) zeros(1,n/2)];`<br>`else s=zeros(1,n); end` |
 | **04** | **Polar RZ** | **1:** Half +ve, Half 0 <br> **0:** Half -ve, Half 0 | `if b==1, s=[ones(1,n/2) zeros(1,n/2)];`<br>`else s=[-1*ones(1,n/2) zeros(1,n/2)]; end` |
-| **05** | **Manchester** | **1:** High to Low <br> **0:** Low to High | `if b==1, s=[ones(1,n/2) -ones(1,n/2)];`<br>`else s=[-1*ones(1,n/2) ones(1,n/2)]; end` |
+| **05** | **Manchester** | **1:** High to Low <br> **0:** Low to High | `if b==1, s=[-1*ones(1,n/2) ones(1,n/2)];`<br>`else s=[ones(1,n/2) -ones(1,n/2)]; end` |
 | **06** | **Bipolar AMI** | **0:** Zero <br> **1:** Toggle (+V, -V) | `if b==0, s=zeros(1,n);`<br>`else s=v*ones(1,n); v=-v; end` *(Need prev state)* |
 
 ---
