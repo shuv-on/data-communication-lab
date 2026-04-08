@@ -2,9 +2,10 @@ clc;
 clear;
 
 % Parameters
-fs = 200;                    % Sampling frequency
-t = 0:1/fs:1;                % Time vector
-x = sin(2*pi*5*t);           % Input signal (sine wave)
+fs = 1000;                    % Sampling frequency
+t = 0:1/fs:1;     
+Am =2;           % Time vector
+x =  Am*sin(2*pi*2*t);           % Input signal (sine wave)
 delta = 0.2;                 % Step size
 
 % Initialization
