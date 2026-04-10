@@ -9,7 +9,7 @@ x = [];
     end
     x = [x shape];
 end
-plot (x, 'LineWidth', 2);
+plot (x, 'LineWidth', 4,'r');
 axis ([0 length(x) -2 2]);
 grid on;
 xlabel('Time (s)');

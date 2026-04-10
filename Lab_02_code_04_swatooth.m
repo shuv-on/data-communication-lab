@@ -7,4 +7,4 @@ x = 2*amp*(t*f-floor(t*f+0.5));
 plot(t, x);
 xlabel('Time (s)');
 ylabel('Amplitude');
-title('Manually Generated swatooth');
+title('Manually Generated swatooth'); 
