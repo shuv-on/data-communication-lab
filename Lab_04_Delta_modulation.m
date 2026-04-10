@@ -10,14 +10,14 @@ delta = 0.2;                 % Step size
 
 % Initialization
 x_dm = zeros(size(x));       % Delta modulated signal (reconstructed)
-bitstream = zeros(size(x));  % Output bitstream (0 or 1)
+ % Output bitstream (0 or 1)
 
 for i = 2:length(x)
     if x(i) > x_dm(i-1)
-        bitstream(i) = 1;
-        x_dm(i) = x_dm(i-1) + delta;
+        
+        x_dm(i) = x_dm(i-1) + delta; 
     else
-        bitstream(i) = 0;
+        
         x_dm(i) = x_dm(i-1) - delta;
     end
 end
